@@ -1,17 +1,3 @@
-# Getting Started
-
-### Reference Documentation
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-
 # Assignment
 
 ## Document Storage REST Web Service Specification
@@ -30,49 +16,49 @@ The following guides illustrate how to use some features concretely:
 ## Examples:
 
 ### Create
-Request:
+**Request:**
 
 POST /storage/documents
 Content-Length: 11
 hello world
 
 
-Response:
+**Response:**
 
 201 Created
 Content-Type: text/plain; charset=us-ascii Content-Length: 20
 ONWZ4UUVV8S31JCB662P
 
 ### Query
-Request:
+**Request:**
 
 GET /storage/documents/ONWZ4UUVV8S31JCB662P
 
 
-Response:
+**Response:**
 
 200 OK
 Content-Length: 11
 hello world
 
 ### Update
-Request:
+**Request:**
 
 PUT /storage/documents/ONWZ4UUVV8S31JCB662P Content-Length: 13
 goodbye world
 
 
-Response:
+**Response:**
 
 204 No Content
 
 ### Delete
-Request:
+**Request:**
 
 DELETE /storage/documents/ONWZ4UUVV8S31JCB662P
 
 
-Response:
+**Response:**
 
 204 No Content
 
