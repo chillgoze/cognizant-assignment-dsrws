@@ -16,50 +16,42 @@
 ## Examples:
 
 ### Create
-**Request:**
-
+**Request:**  
 POST /storage/documents
 Content-Length: 11
 hello world
 
 
-**Response:**
-
+**Response:**  
 201 Created
 Content-Type: text/plain; charset=us-ascii Content-Length: 20
 ONWZ4UUVV8S31JCB662P
 
 ### Query
-**Request:**
-
+**Request:**  
 GET /storage/documents/ONWZ4UUVV8S31JCB662P
 
 
-**Response:**
-
+**Response:**  
 200 OK
 Content-Length: 11
 hello world
 
 ### Update
-**Request:**
-
+**Request:**  
 PUT /storage/documents/ONWZ4UUVV8S31JCB662P Content-Length: 13
 goodbye world
 
 
-**Response:**
-
+**Response:**  
 204 No Content
 
 ### Delete
-**Request:**
-
+**Request:**  
 DELETE /storage/documents/ONWZ4UUVV8S31JCB662P
 
 
-**Response:**
-
+**Response:**  
 204 No Content
 
 ## Executing
@@ -67,4 +59,11 @@ DELETE /storage/documents/ONWZ4UUVV8S31JCB662P
 ## JAR
 Executable JAR with embedded Tomcat
 
-mvn clean spring-boot:run
+```mvn clean spring-boot:run```
+
+If Maven not installed:  
+[Linux] ```./mvnw clean spring-boot:run```  
+[Windows] ```mvnw clean spring-boot:run```
+
+## Notes   
+This assignment is a proof-of-concept. It does not implement the design for an abstract data store so the application can switch between different persistent models.
