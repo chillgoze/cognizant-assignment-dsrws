@@ -66,4 +66,4 @@ If Maven not installed:
 [Windows] ```mvnw clean spring-boot:run```
 
 ## Notes   
-This assignment is a proof-of-concept. It does not implement the design for an abstract data store so the application can switch between different persistent models.
+This assignment is a proof-of-concept. It does not implement the design for an abstract data store so the application can switch between different persistent implementations.
